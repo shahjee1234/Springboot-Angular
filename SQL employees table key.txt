@@ -1,0 +1,35 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [id]
+      ,[email_id]
+      ,[first_name]
+      ,[last_name]
+      ,[password]
+      ,[role]
+      ,[username]
+      ,[user_role]
+      ,[user_name]
+     
+      ,[name]
+      ,[pic_byte]
+      ,[type]
+  FROM [employee_management_system].[dbo].[employees]
+
+
+  ALTER TABLE employees
+ALTER COLUMN pic_byte VARCHAR(8000);
+
+
+ALTER TABLE employees DROP FOREIGN KEY image_id;
+ALTER TABLE employees
+DROP FOREIGN KEY image_id;
+
+ALTER TABLE employees
+DROP CONSTRAINT image_id;
+ALTER TABLE employees
+DROP COLUMN image_id;
+
+ALTER TABLE employees
+DROP CONSTRAINT FKgmjcpdsqwdiox1v5qosmqrjgw;
+
+
+sp_help employees

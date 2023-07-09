@@ -1,0 +1,18 @@
+https://youtu.be/zvR-Oif_nxg    //  Daily Code Buffer
+
+// JWT Authentication Video (Coding Streams)
+
+//JWT Authentication - Spring Boot Security | Hindi
+
+https://youtu.be/CSDA_No_la8
+
+//JWT Authentication + MySQL - Spring Boot Security | Hindi
+
+https://youtu.be/SFTAhbW2GcY
+
+//Angular JWT Authentication
+https://roytuts.com/angular-spring-boot-security-jwt-authentication-and-authorization/
+
+
+
+

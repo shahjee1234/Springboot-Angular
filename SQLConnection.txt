@@ -1,0 +1,77 @@
+spring.datasource.url=jdbc:sqlserver://DESKTOP-TTBIGOK:1435;databaseName=company;trustServerCertificate=true
+spring.datasource.username=mubashir
+spring.datasource.password=ahmed
+spring.first-datasource.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.SQLServer2008Dialect
+spring.jpa.hibernate.ddl-auto = ${HIBERNATE_DDL_AUTO:update}
+
+
+import (
+	"database/sql"
+	"os"
+	"system-y-credit-application-approval/Models"
+
+	"fmt"
+	"log"
+
+	_ "github.com/denisenkom/go-mssqldb"
+	"github.com/spf13/viper"
+)
+
+func GetDB(config Models.Config) *sql.DB {
+	// Connect to database
+
+	connString := fmt.Sprintf("server=%s;user id=%s;password=%s;port=%s;database=%s;",
+		config.SQLDB_Server, config.SQLDB_User, config.SQLDB_Password, config.SQLDB_Port, config.SQLDB_Name)
+	conn, err := sql.Open("mssql", connString)
+	if err != nil {
+		log.Fatal("Open connection failed:", err.Error())
+	}
+	fmt.Println("Connected to Sql Server ")
+
+	return conn
+}
+
+
+
+SELECT TOP (1000) [ID]
+      ,[Isbn]
+      ,[Title]
+      ,[FirstName]
+      ,[LastName]
+  FROM [movie].[dbo].[moviedetails]
+
+DELETE FROM employees;
+
+INSERT INTO moviedetails(ID, Isbn, Title,FirstName,LastName)
+VALUES (1, 1234, 'First Movie','Ali','Awan');
+INSERT INTO moviedetails(ID, Isbn, Title,FirstName,LastName)
+VALUES (2, 1224, 'Second Movie','Ahmed','');
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [ID]
+      ,[FirstName]
+      ,[LastName]
+      ,[Role]
+      ,[Email]
+  FROM [movie].[dbo].[employeedetails]
+
+  INSERT INTO employeedetails(ID, FirstName, LastName,Role,Email)
+VALUES (1, 'Ahmed', 'Awan','Manager','ahmed@gmail.com');
+  INSERT INTO employeedetails(ID, FirstName, LastName,Role,Email)
+VALUES (2, 'Ali', 'Khan','Assistant Manager','ali@gmail.com');
+
+
+
+//English Level Testing
+
+https://europa.eu/europass/system/files/2020-05/CEFR%20self-assessment%20grid%20EN.pdf
+
+
+
+git repo
+
+https://github.com/shahjee1234/All_Projects.git
+

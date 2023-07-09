@@ -1,0 +1,77 @@
+Spring Boot Tutorial
+https://www.tutorialspoint.com/spring_boot/spring_boot_building_restful_web_services.htm
+
+Spring Boot | REST API Request Validation & Exception Handling Realtime Example | JavaTechie
+Java Techie
+https://youtu.be/gPnd-hzM_6A
+
+
+Interview QA | 40+ Spring & Spring Boot Annotations Everyone Should Know | JavaTechie
+https://youtu.be/htyq-mER0AE
+
+Spring Boot Main annotations
+--------------------------------------------------
+1. @SpringBootApplication
+2. @ComponentScan
+3. @EanbleAutoConfiguration
+4. @Configuration
+
+Stereotype annotation
+----------------------------------------
+1.  @Component
+2.  @Service
+3.  @RestController / @Controller
+4.  @Repository
+
+Spring Core related Annotations:
+----------------------------------------------------
+@Configuration
+@Bean
+@Autowired 
+@Qualifier 
+@Lazy 
+@Value 
+@PropertySource
+@ConfigurationProperties 
+@Profile
+@Scope
+
+REST API related Annotations:
+------------------------------------------------
+@RestController
+@RequestMapping
+@GetMapping
+@PostMapping
+@PutMapping
+@DeleteMapping
+@RequestBody 
+@PathVariable
+@RequestParam
+@ControllerAdvice & @ExceptionHandler
+
+Spring Data JPA related annotations:
+------------------------------------------------------------
+@Entity
+@Table
+@Column
+@Transactional 
+Entity class relationships 
+@OnetoOne 
+@OnetoMany 
+@ManytoOne
+@ManytoMany
+
+GitHub:
+https://github.com/Java-Techie-jt/annotations-cheatsheet/tree/main
+
+
+
+Job Descriptions are mentioned below:
+𝐒𝐞𝐧𝐢𝐨𝐫 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 / 𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐚𝐥 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐄𝐧𝐠𝐢𝐧𝐞𝐞𝐫 𝐉𝐀𝐕𝐀 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭:
+Minimum of a bachelor's degree in IT or Computer Science
+6+ years of programming and development experience.
+Sound understanding of Java, Spring Boot, React JS and Angular JS
+Solid Experience of Full Stack Development Lifecycle
+Proven experience over working on complex systems and ability to understand and solve challenging analytical problems
+Working on financial applications, transaction processing systems & Micro services-based architecture would be a plus.
+Excellent Analytical, communication and problem-solving skills coupled with a strong work ethic.

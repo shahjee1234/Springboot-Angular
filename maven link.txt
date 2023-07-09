@@ -1,0 +1,102 @@
+mvn clean install sonar:sonar -Dsonar.host.url=http://ca1.risknucleus.com:9003 -Dsonar.login=squ_c02c44fa2124ae903e2911b1cebad5a4d808b632
+
+
+sonar-scanner \-Dsonar.host.url=http://ca1.risknucleus.com:403 -Dsonar.login=squ_c02c44fa2124ae903e2911b1cebad5a4d808b632
+
+sonar-scanner -Dsonar.projectKey= -Dsonar.sources=./ -Dsonar.host.url=http://ca1.risknucleus.com:403 -Dsonar.login=squ_c02c44fa2124ae903e2911b1cebad5a4d808b632
+
+sonar-scanner -Dsonar.sources=./ -Dsonar.host.url=http://ca1.risknucleus.com:403 -Dsonar.login=squ_c02c44fa2124ae903e2911b1cebad5a4d808b632
+
+
+http://ca1.risknucleus.com:9003/
+username: admin
+pass: benchmatrix786?
+
+
+github benchmatrix:
+
+username: mubashirhashmi
+password: mubashir@123m
+
+how to scan go and send it to sonar
+
+
+format & get & customer & getcoustomer
+
+
+
+facility dynamic systemy configu credit cycle gateway workflow exception manager documentation communication audit 
+
+
+
+<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.9.0.2155</version>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.7</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+sonar-scanner -Dsonar.host.url=http://ca1.risknucleus.com:403/api/auth -Dsonar.login=squ_c02c44fa2124ae903e2911b1cebad5a4d808b632
+
+sonar-scanner.bat -D"sonar.projectKey=testing" -D"sonar.sources=." -D"sonar.host.url=http://ca1.risknucleus.com:9003" -D"sonar.token=sqp_6f44883a826ab8cb6dd46c09f9bd02c977eec693"
+
+
+
+sonar-scanner -Dsonar.projectKey=<your_project_key> -Dsonar.sources=./ -Dsonar.host.url=http://ca1.risknucleus.com:403/api/auth -Dsonar.login=squ_c02c44fa2124ae903e2911b1cebad5a4d808b632
+
+
+
+
+
+sonar-scanner.bat -D"sonar.projectKey=testing" -D"sonar.sources=." -D"sonar.host.url=http://ca1.risknucleus.com:9003" -D"sonar.token=sqp_6f44883a826ab8cb6dd46c09f9bd02c977eec693"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

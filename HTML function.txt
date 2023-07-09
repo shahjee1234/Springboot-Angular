@@ -1,0 +1,186 @@
+ALTER FUNCTION HTML()
+RETURNS NVARCHAR(MAX)
+AS
+BEGIN
+    DECLARE @html NVARCHAR(MAX)
+
+    -- Initialize the HTML string
+    SET @html = ''
+
+    -- Declare variables to store table data
+  
+    DECLARE @full_name NVARCHAR(50)
+    DECLARE @email NVARCHAR(50)
+    DECLARE @age NVARCHAR(50)
+
+    -- Cursor to iterate through the table rows
+    DECLARE cursor_name CURSOR FOR
+SELECT first_name + ' ' + last_name AS full_name, email, age
+FROM customer;
+
+    -- Open the cursor
+    OPEN cursor_name
+
+    -- Fetch the first row
+    FETCH NEXT FROM cursor_name INTO @full_name, @email, @age
+
+    -- Loop through the rows
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+        -- Add content to the HTML string for each row
+
+		SET @html = @html + '- full_name: ' + ISNULL(@full_name, '') + CHAR(13) + CHAR(10)
+        SET @html = @html + '- email: ' + ISNULL(@email, '') + CHAR(13) + CHAR(10)
+        SET @html = @html + '- age: ' + ISNULL(@age, '') + CHAR(13) + CHAR(10)
+        SET @html = @html + CHAR(13) + CHAR(10)
+
+        -- Fetch the next row
+        FETCH NEXT FROM cursor_name INTO @full_name, @email, @age
+    END
+
+    -- Close the cursor
+    CLOSE cursor_name
+    DEALLOCATE cursor_name
+
+    -- Return the formatted output
+    RETURN @html
+END
+GO
+
+SELECT dbo.HTML() AS Content
+
+- full_name: Mary Smith
+- email: mary.smith@mailid.com
+- age: 23
+
+- full_name: Patricia Johnson
+- email: patricia.johnson@mailid.com
+- age: 23
+
+- full_name: Madan Mohan
+- email: madan.mohan@mailid.com
+- age: 23
+
+- full_name: Barbara Jones
+- email: barbara.jones@mailid.com
+- age: 23
+
+- full_name: Elizabeth Brown
+- email: elizabeth.brown@mailid.com
+- age: 23
+
+- full_name: Jennifer Davis
+- email: jennifer.davis@mailid.com
+- age: 24
+
+- full_name: Maria Miller
+- email: maria.miller@mailid.com
+- age: 24
+
+- full_name: Susan Wilson
+- email: susan.wilson@mailid.com
+- age: 24
+
+- full_name: R Madhav
+- email: r.madhav@mailid.com
+- age: 34
+
+- full_name: Dorothy Taylor
+- email: dorothy.taylor@mailid.com
+- age: 34
+
+- full_name: Lisa Anderson
+- email: lisa.anderson@mailid.com
+- age: 34
+
+- full_name: Nancy Thomas
+- email: nancy.thomas@mailid.com
+- age: 34
+
+- full_name: Karen Jackson
+- email: karen.jackson@mailid.com
+- age: 40
+
+- full_name: Betty White
+- email: betty.white@mailid.com
+- age: 40
+
+- full_name: Helen Harris
+- email: helen.harris@mailid.com
+- age: 
+- full_name: Mary Smith
+- email: mary.smith@mailid.com
+- age: 23
+
+- full_name: Patricia Johnson
+- email: patricia.johnson@mailid.com
+- age: 23
+
+- full_name: Madan Mohan
+- email: madan.mohan@mailid.com
+- age: 23
+
+- full_name: Barbara Jones
+- email: barbara.jones@mailid.com
+- age: 23
+
+- full_name: Elizabeth Brown
+- email: elizabeth.brown@mailid.com
+- age: 23
+
+- full_name: Jennifer Davis
+- email: jennifer.davis@mailid.com
+- age: 24
+
+- full_name: Maria Miller
+- email: maria.miller@mailid.com
+- age: 24
+
+- full_name: Susan Wilson
+- email: susan.wilson@mailid.com
+- age: 24
+
+- full_name: R Madhav
+- email: r.madhav@mailid.com
+- age: 34
+
+- full_name: Dorothy Taylor
+- email: dorothy.taylor@mailid.com
+- age: 34
+
+- full_name: Lisa Anderson
+- email: lisa.anderson@mailid.com
+- age: 34
+
+- full_name: Nancy Thomas
+- email: nancy.thomas@mailid.com
+- age: 34
+
+- full_name: Karen Jackson
+- email: karen.jackson@mailid.com
+- age: 40
+
+- full_name: Betty White
+- email: betty.white@mailid.com
+- age: 40
+
+- full_name: Helen Harris
+- email: helen.harris@mailid.com
+- age: 
+
+
+CREATE FUNCTION function_name(@parameter1 data_type, @parameter2 data_type)
+RETURNS return_data_type
+AS
+BEGIN
+
+
+
+
+
+
+RETURN value;
+END
+
+
+

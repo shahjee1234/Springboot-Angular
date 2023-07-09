@@ -1,0 +1,9 @@
+handler := cors.Default().Handler(myRouter)
+		c := cors.New(cors.Options{
+			AllowedOrigins:   []string{"*"},
+			AllowedHeaders:   []string{"Authorization", "Role", "username"},
+			AllowCredentials: true,
+		})
+
+		// Insert the middleware
+		handler = c.Handler(handler)
